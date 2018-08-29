@@ -17,7 +17,7 @@ StackScripts used in Linode and Vultr
 * Basic scripts + swarm init
 
 ```
-cat template/basic.sh swarm_manager.sh combine.sh
+cat template/basic.sh swarm_manager.sh > combine.sh
 
 ```
 
@@ -26,7 +26,7 @@ cat template/basic.sh swarm_manager.sh combine.sh
 * Basic scripts + swarm join
 
 ```
-cat template/basic.sh template/swarm_worker.sh combine.sh
+cat template/basic.sh template/swarm_worker.sh > combine.sh
 
 ```
 
@@ -36,14 +36,14 @@ cat template/basic.sh template/swarm_worker.sh combine.sh
 * Basic scripts + swarm init + ss-kcp-server(sskcp_conf and docker-compse.yml)
 
 ```
-cat template/basic.sh template/swarm_manager.sh template/download_config_m.sh template/sskcp_server_deploy.sh combine.sh
+cat template/basic.sh template/swarm_manager.sh template/download_config_m.sh template/sskcp_server_deploy.sh > combine.sh
 
 ```
 
 * Basic scripts + swarm join + ss-kcp-server(docker-compose.yml)
 
 ```
-cat template/basic.sh template/swarm_worker.sh template/download_config_w.sh combine.sh
+cat template/basic.sh template/swarm_worker.sh template/download_config_w.sh > combine.sh
 
 ```
 
@@ -53,7 +53,7 @@ cat template/basic.sh template/swarm_worker.sh template/download_config_w.sh com
 * Basic scripts + swarm init + ss-kcp-server(sskcp_conf and docker-compse.yml) + dns-proxy
 
 ```
-cat template/basic.sh template/swarm_manager.sh template/download_config_m.sh template/sskcp_server_deploy.sh template/dns_proxy.sh combine.sh
+cat template/basic.sh template/swarm_manager.sh template/download_config_m.sh template/sskcp_server_deploy.sh template/dns_proxy.sh > combine.sh
 
 ```
 
@@ -61,7 +61,7 @@ cat template/basic.sh template/swarm_manager.sh template/download_config_m.sh te
 * Basic scripts + swarm join + ss-kcp-server(docker-compose.yml) + dns-proxy
 
 ```
-cat template/basic.sh template/swarm_worker.sh template/download_config_w.sh template/dns_proxy.sh combine.sh
+cat template/basic.sh template/swarm_worker.sh template/download_config_w.sh template/dns_proxy.sh > combine.sh
 
 ```
 
