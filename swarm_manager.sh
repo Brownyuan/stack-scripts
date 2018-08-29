@@ -1,9 +1,12 @@
 #!/bin/bash
 
+
+
 #------------------------------------------------------
-#|                       swarm_manager.sh             |
+#|                 swarm_manager.sh                   |
 #|                                                    |
 #------------------------------------------------------
 
-# docker swatm init
+# docker swarm init
+
 docker swarm init

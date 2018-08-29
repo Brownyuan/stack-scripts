@@ -4,13 +4,13 @@
 #|                       basic.sh                     |
 #|                                                    |
 #------------------------------------------------------
-System upgrade
+#System upgrade
 apt update -y
 apt upgrade -y
 apt autoremove -y
 
 # Install application
-apt install ipset iftop tree whois iperf3 unzip \
+apt install ipset iftop tree whois iperf3 unzip wget jq \
 			curl ca-certificates apt-transport-https software-properties-common nethogs -y
 
 
@@ -26,8 +26,9 @@ apt-get install docker-ce -y
 timedatectl set-timezone Hongkong
 timedatectl status
 
- USERNAME="myuser"
- PASSWORD="mypasswd"
+# Replace `MYUSER` `MYPASSWD` below
+ USERNAME="MYUSER"
+ PASSWORD="MYPASSWD"
 
 # # if you wan to add a new user,  
 
