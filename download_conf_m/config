@@ -1,0 +1,23 @@
+
+# This script downloads an asset from latest or specific Github release of a
+# private repo. Feel free to extract more of the variables into command line
+# parameters.
+#
+# PREREQUISITES
+#
+# curl, wget, jq
+#
+# If your version/tag doesn't match, the script will exit with error.
+
+
+
+# Update attributes
+# Replace `MYTOKEN` `MYREPO` `MYVERSION` below
+TOKEN="MYTOKEN"   # token for downloading released package of private repositories
+REPO="MYREPO"
+VERSION="MYVERSION"   # tag name or the word "latest"
+COMPOSEFILE="sskcp_compose-0.0.2.zip"
+CONFFILE="sskcp_conf-0.0.2.zip"
+GITHUB="https://api.github.com"
+
+

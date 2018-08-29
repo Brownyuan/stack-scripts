@@ -1,0 +1,6 @@
+
+# dns-proxy deployment
+# Replace `MYWAN` `MYPORTRANGE` below
+WAN="MYWAN"
+PORTR="MYPORTRANGE"  # example 16345:16355
+VERSION="0.0.3"

@@ -1,2 +1,8 @@
 *.bk
 *combine.sh
+dns_proxy.sh
+sskcp_server_deploy.sh
+swarm_worker.sh
+download_conf_w.sh
+download_conf_m.sh
+myconfig*

@@ -1,26 +1,3 @@
-#!/bin/bash
-
-#------------------------------------------------------
-#|                download_config_w.sh                |
-#|                                                    |
-#------------------------------------------------------
-
-# This script downloads an asset from latest or specific Github release of a
-# private repo. Feel free to extract more of the variables into command line
-# parameters.
-#
-# PREREQUISITES
-# curl, wget, jq
-#
-# If your version/tag doesn't match, the script will exit with error.
-
-# Replace `MYTOKEN` `MYREPO` `MYVERSION` below
-TOKEN="MYTOKEN"
-REPO="MYREPO"
-VERSION="MYVERSION"   # tag or latest
-CONFFILE="sskcp_conf-0.0.2.zip"
-GITHUB="https://api.github.com"
-
 
 function gh_curl() {
   curl -H "Authorization: token $TOKEN" \
@@ -72,6 +49,10 @@ function mv_conf(){
     echo "----------------------------------------"   
     ls /
 }
+
+verify_ver $VERSION $COMPOSEFILE
+get_conf $COMPOSEFILE
+mv_conf $COMPOSEFILE
 
 verify_ver $VERSION $CONFFILE
 get_conf $CONFFILE
