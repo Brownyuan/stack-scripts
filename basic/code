@@ -26,6 +26,8 @@ timedatectl status
 useradd ${USERNAME} -s /bin/bash -m 
 echo -e "$PASSWORD\n$PASSWORD" | passwd ${USERNAME}
 
+# Add new user to sudo group
+usermod -aG sudo ${USERNAME}
 
 # Add new user to docker group 
 groupadd docker

@@ -1,7 +1,0 @@
-
-for i in ${COMP[@]}; do
-
-	docker stack deploy	-c /${i}.yml $i 
-
-done
-
