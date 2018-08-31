@@ -7,64 +7,41 @@ StackScripts used in Linode and Vultr
 
 ##### Basic scripts
 
-* System upgrade
-* Install docker-ce, iftop, tree...
-* Set timezone to HK
+```
+./gen.sh basic basic/config false
+```
 
+##### Download configiguration
 
-##### Swarm manager
-
-* Basic scripts + swarm init
+* Download docker compose and sskcp_config for swarm manager
 
 ```
-cat template/basic.sh swarm_manager.sh > combine.sh
+ ./gen.sh download_conf_m  download_conf_m/config false
+```
 
+* Download sskcp_config for swarm worker
+
+```
+./gen.sh download_conf_w  download_conf_w/config false
 ```
 
 ##### Swarm worker
 
-* Basic scripts + swarm join
-
 ```
-cat template/basic.sh template/swarm_worker.sh > combine.sh
-
+./gen.sh swarm_worker swarm_worker/config false
 ```
-
 
 ##### ss-kcp-server 
 
-* Basic scripts + swarm init + ss-kcp-server(sskcp_conf and docker-compse.yml)
-
 ```
-cat template/basic.sh template/swarm_manager.sh template/download_config_m.sh template/sskcp_server_deploy.sh > combine.sh
-
-```
-
-* Basic scripts + swarm join + ss-kcp-server(docker-compose.yml)
-
-```
-cat template/basic.sh template/swarm_worker.sh template/download_config_w.sh > combine.sh
-
+./gen.sh sskcp_server_deploy sskcp_server_deploy/config false
 ```
 
 
-##### ss-kcp-server + dns-proxy
-
-* Basic scripts + swarm init + ss-kcp-server(sskcp_conf and docker-compse.yml) + dns-proxy
+##### dns-proxy
 
 ```
-cat template/basic.sh template/swarm_manager.sh template/download_config_m.sh template/sskcp_server_deploy.sh template/dns_proxy.sh > combine.sh
-
+./gen.sh dns_proxy dns_proxy/config false
 ```
-
-
-* Basic scripts + swarm join + ss-kcp-server(docker-compose.yml) + dns-proxy
-
-```
-cat template/basic.sh template/swarm_worker.sh template/download_config_w.sh template/dns_proxy.sh > combine.sh
-
-```
-
-
 
 
