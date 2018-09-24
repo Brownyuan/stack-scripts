@@ -1,47 +1,87 @@
-# StackScripts
+<p align="center">
+  <img width="250" src="LOGO">
+</p>
 
-StackScripts used in Linode and Vultr 
+<h1 align="center"> Project Title </h1>
+<p align="center">
+  <b >One Paragraph of project description goes here</b>
+</p>
+<br>
 
+[![GitHub release](https://img.shields.io/github/release/OWNER/REPO.svg)](https://github.com/OWNER/REPO/releases)
+![Github All Releases](https://img.shields.io/github/downloads/OWNER/REPO/total.svg)
+[![Docker Pulls](https://img.shields.io/docker/pulls/OWNER/REPO.svg)](https://hub.docker.com/r/OWNER/REPO/tags/)
+![Travis (.org) branch](https://img.shields.io/travis/OWNER/REPO/BRANCH.svg)
+[![Docker Automated build](https://img.shields.io/docker/automated/OWNER/REPO.svg)](https://hub.docker.com/r/OWNER/REPO/)
+[![Docker Build Status](https://img.shields.io/docker/build/OWNER/REPO.svg)](https://hub.docker.com/r/OWNER/REPO/builds/)
+![GitHub](https://img.shields.io/github/license/OWNER/REPO.svg)
+# Deployment
 
-### StackScripts
+As a user, how to deploy the project
 
-##### Basic scripts
+# Getting Started
 
-```
-./gen.sh basic basic/config false
-```
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
 
-##### Download configiguration
+### Prerequisites
 
-* Download docker compose and sskcp_config for swarm manager
-
-```
- ./gen.sh download_conf_m  download_conf_m/config false
-```
-
-* Download sskcp_config for swarm worker
-
-```
-./gen.sh download_conf_w  download_conf_w/config false
-```
-
-##### Swarm worker
-
-```
-./gen.sh swarm_worker swarm_worker/config false
-```
-
-##### ss-kcp-server 
+What things you need to install the software and how to install them
 
 ```
-./gen.sh sskcp_server_deploy sskcp_server_deploy/config false
+Give examples
 ```
 
+### Installing
 
-##### dns-proxy
+How to install package
+
+
+### Running the tests
+
+Explain how to run the automated tests for this system
 
 ```
-./gen.sh dns_proxy dns_proxy/config false
+Give an example
 ```
+### Documentation
+Document list of the project
 
+* user manual
+* API 
+* Requirement design
+
+
+### Build
+
+How to build
+
+### Built With
+
+Tools you used for building this project
+
+# Logistics
+
+### Contributing
+
+Please read [CONTRIBUTING.md](https://github.com/OWNER/REPO/blob/master/docs/CONTRIBUTING.md) for contributing.
+For details on our [code of conduct](https://github.com/OWNER/REPO/blob/master/docs/CODE_OF_CONDUCT.md), and the process for submitting pull requests to us.
+
+### Versioning
+
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the tags on this repository
+
+### Authors
+
+* **AUTHOR** - *Initial work* - [AUTHOR](https://github.com/AUTHOR)
+
+See also the list of [contributors](https://github.com/OWNER/REPO/graphs/contributors) who participated in this project.
+
+### Acknowledgments
+
+See [Acknowledgments](https://github.com/OWNER/REPO/blob/master/docs/ACKNOWLEDGMENTS.md)
+
+
+### License
+
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/OWNER/REPO/blob/master/LICENSE.md) file for details
 
