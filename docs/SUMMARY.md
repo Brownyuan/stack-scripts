@@ -20,7 +20,7 @@
 
 ### Community activities
 
-* [How to contribute](Community/CONTRIBUTING.md)
-* [Acknowledgments](Community/ACKNOWLEDGMENTS.md)
-* [Code of conduct](Community/CODE_OF_CONDUCT.md)
+* [How to contribute](CONTRIBUTING.md)
+* [Acknowledgments](ACKNOWLEDGMENTS.md)
+* [Code of conduct](CODE_OF_CONDUCT.md)
 
