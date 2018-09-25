@@ -12,12 +12,15 @@
 
 
 # Update attributes
-# Replace `MYTOKEN` `MYREPO` `MYVERSION` below
-TOKEN="MYTOKEN"   # token for downloading released package of private repositories
-REPO="MYREPO"
-VERSION="MYVERSION"   # tag name or the word "latest"
-COMPOSEFILE="sskcp_compose-0.0.2.zip"
-CONFFILE="sskcp_conf-0.0.2.zip"
-GITHUB="https://api.github.com"
 
 
+# visit https://github.com/settings/tokens
+# api token for downloading released package of github private repositories
+# Replace `MYTOKEN` below
+TOKEN="MYTOKEN"
+
+# Visit https://github.com/dorrywhale/customer-support/releases
+REPO="dorrywhale/customer-support" 
+
+# versem tag name
+VERSION="0.0.2"   

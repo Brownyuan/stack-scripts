@@ -1,6 +1,9 @@
 
 # dns-proxy deployment
-# Replace `MYWAN` `MYPORTRANGE` below
-WAN="MYWAN"
-PORTR="MYPORTRANGE"  # example 16345:16355
-VERSION="0.0.3"
+
+# uncomment if vps is Linode
+#WAN="eth0"
+# uncomment if vps is Vultr
+#WAN="ens3"
+PORTR="16350:16370"  # example 16345:16355
+VERSION="0.0.4"

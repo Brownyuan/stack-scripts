@@ -1,7 +1,7 @@
 
-for i in ${COMP[@]}; do
+for i in /*.yml; do
 
-	docker stack deploy -c /${i}.yml $i 
+	docker stack deploy -c ${i} `basename $i .yml` 
 
 done
 

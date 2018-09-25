@@ -1,3 +1,6 @@
+COMPOSEFILE="sskcp_compose-${VERSION}.zip"
+CONFFILE="sskcp_conf-${VERSION}.zip"
+GITHUB="https://api.github.com"
 
 function gh_curl() {
   curl -H "Authorization: token $TOKEN" \
@@ -38,16 +41,16 @@ function get_conf(){
 
 function mv_conf(){
 	FL=$1
-    mv $FL /
-    unzip -d / /$FL
-    echo "----------------------------------------"
-    echo "|            list pwd                  |"
-    echo "----------------------------------------"
-    ls $PWD 
-    echo "----------------------------------------"
-    echo "|            list /                    |"
-    echo "----------------------------------------"   
-    ls /
+  mv $FL /
+  unzip -d / /$FL
+  echo "----------------------------------------"
+  echo "|            list pwd                  |"
+  echo "----------------------------------------"
+  ls $PWD 
+  echo "----------------------------------------"
+  echo "|            list /                    |"
+  echo "----------------------------------------"   
+  ls /
 }
 
 verify_ver $VERSION $COMPOSEFILE

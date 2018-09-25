@@ -1,7 +1,9 @@
 
-# docker swatm join, replace `TOKEN` `IP` `PORT` below
-# ssh to MANAGER  and run "docker swarm join-token worker" to get token, IP and PORT
+# docker swatm join, replace `TOKEN` `IP` below
+# ssh to MANAGER  and run "docker swarm join-token worker" to get token, IP
+# e.g,
+# ssh dorry@<managerIP> docker swarm join-token worker
 TOKEN="MYTOKEN"
 IP="MYIP"
-PORT="MYPORT"
+PORT="2377"
 

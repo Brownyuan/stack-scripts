@@ -7,12 +7,16 @@
 # curl, wget, jq
 #
 # If your version/tag doesn't match, the script will exit with error.
-
-# Replace `MYTOKEN` `MYREPO` `MYVERSION` below
+#
+#
+# visit https://github.com/settings/tokens
+# api token for downloading released package of github private repositories
+# Replace `MYTOKEN` below
 TOKEN="MYTOKEN"
-REPO="MYREPO"
-VERSION="MYVERSION"   # tag or latest
-CONFFILE="sskcp_conf-0.0.2.zip"
-GITHUB="https://api.github.com"
 
+# Visit https://github.com/dorrywhale/customer-support/releases
+REPO="dorrywhale/customer-support" 
+
+# versem tag name
+VERSION="0.0.2"   
 

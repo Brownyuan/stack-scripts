@@ -1,5 +1,5 @@
 
-wget https://github.com/meninasx86/dns-proxy/releases/download/${VERSION}/dns-proxy-${VERSION}.zip
+wget https://github.com/elespejo/dns-proxy/releases/download/${VERSION}/dns-proxy-${VERSION}.zip
 unzip dns-proxy-${VERSION}.zip
 cd dns-proxy
 ./ctl start $WAN $PORTR 

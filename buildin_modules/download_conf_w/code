@@ -1,4 +1,8 @@
 
+CONFFILE="sskcp_conf-${VERSION}.zip"
+GITHUB="https://api.github.com"
+
+
 function gh_curl() {
   curl -H "Authorization: token $TOKEN" \
        -H "Accept: application/vnd.github.v3.raw" \
